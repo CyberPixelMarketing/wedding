@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <title>طريقك لتكون منظم زفاف مميز | مبارك الشيخ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        html, body {
+            width: 100%;
+            overflow-x: hidden;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Tajawal', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: #F5EFE0;
+            color: #5C4A32;
+            line-height: 1.8;
+            min-height: 100vh;
+        }
+
+        /* Navigation */
+        .nav {
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            z-index: 1000;
+            padding: 15px 20px;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-justify-content: space-between;
+            justify-content: space-between;
+            -webkit-align-items: center;
+            align-items: center;
+            background-color: rgba(245, 239, 224, 0.95);
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 15px rgba(92, 74, 50, 0.1);
+        }
+
+        .logo {
+            font-family: 'Amiri', serif;
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #8B6914;
+            text-decoration: none;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-align-items: center;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #C9A351, #8B6914);
+            border-radius: 50%;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-align-items: center;
+            align-items: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.1rem;
+        }
+
+        .nav-links {
+            display: none;
+        }
+
+        .cta-btn {
+            background: linear-gradient(135deg, #C9A351, #8B6914);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 50px;
+            font-family: 'Tajawal', sans-serif;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-align-items: center;
+            align-items: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            padding: 100px 20px 60px;
+            background: linear-gradient(135deg, #FAF7F0 0%, #F5EFE0 100%);
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            width: 100%;
+        }
+
+        .hero-badge {
+            display: -webkit-inline-flex;
+            display: inline-flex;
+            -webkit-align-items: center;
+            align-items: center;
+            gap: 10px;
+            background-color: rgba(201, 163, 81, 0.15);
+            padding: 10px 20px;
+            border-radius: 50px;
+            margin-bottom: 20px;
+            font-size: 0.9rem;
+            color: #8B6914;
+        }
+
+        .hero-badge span {
+            width: 8px;
+            height: 8px;
+            background-color: #C9A351;
+            border-radius: 50%;
+        }
+
+        .hero h1 {
+            font-family: 'Amiri', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: 20px;
+            color: #3D3126;
+        }
+
+        .hero h1 .highlight {
+            color: #8B6914;
+        }
+
+        .hero-subtitle {
+            font-size: 1.1rem;
+            color: #5C4A32;
+            margin-bottom: 30px;
+            padding: 0 10px;
+        }
+
+        .hero-features {
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-justify-content: center;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .hero-feature {
+            display: -webkit-flex;
+            display: flex;
+            -webkit-align-items: center;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.95rem;
+            color: #5C4A32;
+            background-color: white;
+            padding: 10px 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(92, 74, 50, 0.1);
+        }
+
+        .hero-feature svg {
+            width: 20px;
+            height: 20px;
+            color: #C9A351;
+        }
+
+        .hero-buttons {
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-justify-content: center;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            border: 2px solid #C9A351;
+            color: #8B6914;
+            padding: 10px 25px;
+            border-radius: 50px;
+            font-family: 'Tajawal', sans-serif;
+            font-weight: 600;
+            font-size: 1rem;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        /* Trainer Section */
+        .trainer {
+            padding: 60px 20px;
+            background-color: #3D3126;
+            text-align: center;
+        }
+
+        .trainer-info h3 {
+            font-family: 'Amiri', serif;
+            font-size: 2rem;
+            color: #C9A351;
+            margin-bottom: 10px;
+        }
+
+        .trainer-info h4 {
+            font-size: 1.1rem;
+            color: #F5EFE0;
+            margin-bottom: 25px;
+            opacity: 0.9;
+        }
+
+        .trainer-credentials {
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-direction: column;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .credential {
+            display: -webkit-flex;
+            display: flex;
+            -webkit-align-items: center;
+            align-items: center;
+            gap: 12px;
+            color: #F5EFE0;
+            font-size: 1rem;
+            text-align: right;
+        }
+
+        .credential-icon {
+            min-width: 40px;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(201, 163, 81, 0.2);
+            border-radius: 10px;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-align-items: center;
+            align-items: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            color: #C9A351;
+            font-size: 1.1rem;
+        }
+
+        /* Section Header */
+        .section-header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 40px;
+            padding: 0 20px;
+        }
+
+        .section-header h2 {
+            font-family: 'Amiri', serif;
+            font-size: 2rem;
+            color: #3D3126;
+            margin-bottom: 10px;
+        }
+
+        .section-header p {
+            font-size: 1.1rem;
+            color: #5C4A32;
+            opacity: 0.8;
+        }
+
+        /* Topics Section */
+        .topics {
+            padding: 60px 20px;
+            background-color: #FAF7F0;
+        }
+
+        .topics-grid {
+            max-width: 800px;
+            margin: 0 auto;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-direction: column;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .topic-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 15px;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-align-items: flex-start;
+            align-items: flex-start;
+            gap: 15px;
+            box-shadow: 0 5px 20px rgba(92, 74, 50, 0.1);
+            border-right: 4px solid #C9A351;
+        }
+
+        .topic-number {
+            min-width: 45px;
+            width: 45px;
+            height: 45px;
+            background: linear-gradient(135deg, #E8D5A3, #C9A351);
+            border-radius: 12px;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-align-items: center;
+            align-items: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            font-family: 'Tajawal', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: white;
+        }
+
+        .topic-content h3 {
+            font-size: 1.1rem;
+            color: #3D3126;
+            margin-bottom: 5px;
+        }
+
+        .topic-content p {
+            font-size: 0.9rem;
+            color: #5C4A32;
+            opacity: 0.8;
+        }
+
+        /* Benefits Section */
+        .benefits {
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #F5EFE0 0%, #FAF7F0 100%);
+        }
+
+        .benefits-grid {
+            max-width: 800px;
+            margin: 0 auto;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-direction: column;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .benefit-card {
+            background-color: white;
+            padding: 25px 20px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(92, 74, 50, 0.1);
+            border-bottom: 4px solid #C9A351;
+        }
+
+        .benefit-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, rgba(201, 163, 81, 0.15), rgba(201, 163, 81, 0.05));
+            border-radius: 20px;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-align-items: center;
+            align-items: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            margin: 0 auto 15px;
+            font-size: 2rem;
+        }
+
+        .benefit-card h3 {
+            font-size: 1.2rem;
+            color: #3D3126;
+            margin-bottom: 10px;
+        }
+
+        .benefit-card p {
+            font-size: 0.95rem;
+            color: #5C4A32;
+            opacity: 0.8;
+        }
+
+        /* Details Section */
+        .details {
+            padding: 60px 20px;
+            background-color: #3D3126;
+        }
+
+        .details-grid {
+            max-width: 800px;
+            margin: 0 auto;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+            gap: 15px;
+            -webkit-justify-content: center;
+            justify-content: center;
+        }
+
+        .detail-card {
+            background-color: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(201, 163, 81, 0.2);
+            padding: 25px 20px;
+            border-radius: 15px;
+            text-align: center;
+            width: calc(50% - 8px);
+            min-width: 150px;
+        }
+
+        .detail-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #C9A351, #8B6914);
+            border-radius: 12px;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-align-items: center;
+            align-items: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            margin: 0 auto 15px;
+            font-size: 1.3rem;
+        }
+
+        .detail-card h4 {
+            font-size: 0.9rem;
+            color: #E8D5A3;
+            margin-bottom: 8px;
+        }
+
+        .detail-card p {
+            font-size: 1rem;
+            color: white;
+            font-weight: 600;
+        }
+
+        .detail-card .highlight-price {
+            font-family: 'Tajawal', sans-serif;
+            font-size: 2rem;
+            color: #C9A351;
+            font-weight: 700;
+        }
+
+        .detail-card .price-currency {
+            font-size: 0.9rem;
+            color: #E8D5A3;
+        }
+
+        .detail-card .dates {
+            font-size: 0.85rem;
+            opacity: 0.8;
+            margin-top: 8px;
+            line-height: 1.6;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #FAF7F0, #F5EFE0);
+            text-align: center;
+        }
+
+        .cta-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .cta-content h2 {
+            font-family: 'Amiri', serif;
+            font-size: 1.8rem;
+            color: #3D3126;
+            margin-bottom: 15px;
+        }
+
+        .cta-content > p {
+            font-size: 1.05rem;
+            color: #5C4A32;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .cta-btn-large {
+            background: linear-gradient(135deg, #C9A351, #8B6914);
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 50px;
+            font-family: 'Tajawal', sans-serif;
+            font-weight: 700;
+            font-size: 1.1rem;
+            text-decoration: none;
+            display: -webkit-inline-flex;
+            display: inline-flex;
+            -webkit-align-items: center;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 10px 30px rgba(201, 163, 81, 0.4);
+        }
+
+        .cta-btn-large svg {
+            width: 22px;
+            height: 22px;
+        }
+
+        .tamara-badge {
+            margin-top: 25px;
+            display: -webkit-inline-flex;
+            display: inline-flex;
+            -webkit-align-items: center;
+            align-items: center;
+            gap: 10px;
+            background-color: white;
+            padding: 12px 20px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(92, 74, 50, 0.1);
+        }
+
+        .tamara-badge span {
+            color: #5C4A32;
+            font-size: 0.95rem;
+        }
+
+        .qr-section {
+            margin-top: 30px;
+        }
+
+        .contact-number {
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-direction: column;
+            flex-direction: column;
+            -webkit-align-items: center;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .contact-number span {
+            font-size: 0.95rem;
+            color: #5C4A32;
+            opacity: 0.8;
+        }
+
+        .contact-number a {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #8B6914;
+            text-decoration: none;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #3D3126;
+            padding: 40px 20px 25px;
+            color: #F5EFE0;
+        }
+
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .footer-brand h3 {
+            font-family: 'Amiri', serif;
+            font-size: 1.8rem;
+            color: #C9A351;
+            margin-bottom: 10px;
+        }
+
+        .footer-brand p {
+            opacity: 0.8;
+            line-height: 1.8;
+            font-size: 0.95rem;
+            margin-bottom: 25px;
+        }
+
+        .footer-contact {
+            margin-bottom: 25px;
+        }
+
+        .footer-contact h4 {
+            font-size: 1.1rem;
+            color: #E8D5A3;
+            margin-bottom: 15px;
+        }
+
+        .footer-contact p {
+            display: -webkit-flex;
+            display: flex;
+            -webkit-align-items: center;
+            align-items: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 10px;
+            opacity: 0.9;
+        }
+
+        .footer-contact a {
+            color: #F5EFE0;
+            text-decoration: none;
+        }
+
+        .footer-bottom {
+            padding-top: 20px;
+            border-top: 1px solid rgba(201, 163, 81, 0.2);
+            text-align: center;
+            opacity: 0.7;
+            font-size: 0.85rem;
+        }
+
+        /* Desktop styles */
+        @media (min-width: 768px) {
+            .nav {
+                padding: 15px 40px;
+            }
+
+            .hero {
+                padding: 120px 40px 80px;
+            }
+
+            .hero h1 {
+                font-size: 3.5rem;
+            }
+
+            .topics-grid {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .benefits-grid {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .detail-card {
+                width: calc(25% - 12px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <a href="#" class="logo">
+            <div class="logo-icon">💍</div>
+            <span>مبارك الشيخ</span>
+        </a>
+        <a href="#register" class="cta-btn">سجل الآن</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span></span>
+                التسجيل متاح الآن
+            </div>
+            <h1>طريقك لتكون<br><span class="highlight">منظم زفاف مميز</span></h1>
+            <p class="hero-subtitle">
+                ورشة تدريبية متخصصة لتمكينك من بدء مشروعك الخاص في تنظيم حفلات الزفاف بدون رأس مال، باستخدام أحدث تقنيات الذكاء الاصطناعي
+            </p>
+            <div class="hero-features">
+                <div class="hero-feature">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <span>3 أيام تدريبية</span>
+                </div>
+                <div class="hero-feature">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                    </svg>
+                    <span>أونلاين على Zoom</span>
+                </div>
+                <div class="hero-feature">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                    </svg>
+                    <span>شهادة معتمدة</span>
+                </div>
+            </div>
+            <div class="hero-buttons">
+                <a href="#register" class="cta-btn">سجل الآن</a>
+                <a href="#topics" class="btn-secondary">تعرف على المحاور</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trainer Section -->
+    <section class="trainer" id="trainer">
+        <div class="trainer-info">
+            <h3>مبارك الشيخ</h3>
+            <h4>مدرب دولي معتمد في تنظيم حفلات الزفاف</h4>
+            <div class="trainer-credentials">
+                <div class="credential">
+                    <div class="credential-icon">✓</div>
+                    <span>عضو الرابطة الدولية الأمريكية لمخططي حفلات الزفاف المحترفين</span>
+                </div>
+                <div class="credential">
+                    <div class="credential-icon">✓</div>
+                    <span>الرئيس التنفيذي لشركة سايبر بكسل لتقنيات الذكاء الاصطناعي</span>
+                </div>
+                <div class="credential">
+                    <div class="credential-icon">✓</div>
+                    <span>مدرب دولي معتمد</span>
+                </div>
+                <div class="credential">
+                    <div class="credential-icon">✓</div>
+                    <span>خبرة واسعة في مجال تنظيم الحفلات والمناسبات</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Topics Section -->
+    <section class="topics" id="topics">
+        <div class="section-header">
+            <h2>محاور الورشة</h2>
+            <p>برنامج تدريبي شامل يغطي جميع جوانب تنظيم حفلات الزفاف</p>
+        </div>
+        
+        <div class="topics-grid">
+            <div class="topic-card">
+                <div class="topic-number">١</div>
+                <div class="topic-content">
+                    <h3>مقدمة عن تنظيم الحفلات</h3>
+                    <p>التعرف على عالم تنظيم الحفلات وأساسياته</p>
+                </div>
+            </div>
+            
+            <div class="topic-card">
+                <div class="topic-number">٢</div>
+                <div class="topic-content">
+                    <h3>من هو منظم الحفلات</h3>
+                    <p>المهارات والصفات المطلوبة للنجاح</p>
+                </div>
+            </div>
+            
+            <div class="topic-card">
+                <div class="topic-number">٣</div>
+                <div class="topic-content">
+                    <h3>كيف تصبح منظم حفلات</h3>
+                    <p>خطوات عملية للدخول في هذا المجال</p>
+                </div>
+            </div>
+            
+            <div class="topic-card">
+                <div class="topic-number">٤</div>
+                <div class="topic-content">
+                    <h3>ابدأ مشروعك بدون رأس مال</h3>
+                    <p>استراتيجيات البدء بأقل التكاليف</p>
+                </div>
+            </div>
+            
+            <div class="topic-card">
+                <div class="topic-number">٥</div>
+                <div class="topic-content">
+                    <h3>التعاون مع أماكن الحفلات</h3>
+                    <p>بناء شراكات مع القاعات والفنادق</p>
+                </div>
+            </div>
+            
+            <div class="topic-card">
+                <div class="topic-number">٦</div>
+                <div class="topic-content">
+                    <h3>التسويق لعملك</h3>
+                    <p>استراتيجيات التسويق الرقمي والتقليدي</p>
+                </div>
+            </div>
+            
+            <div class="topic-card">
+                <div class="topic-number">٧</div>
+                <div class="topic-content">
+                    <h3>العقود القانونية</h3>
+                    <p>حماية حقوقك وحقوق عملائك</p>
+                </div>
+            </div>
+            
+            <div class="topic-card">
+                <div class="topic-number">٨</div>
+                <div class="topic-content">
+                    <h3>الوصول لأول عميل</h3>
+                    <p>خطوات عملية للحصول على أول عقد</p>
+                </div>
+            </div>
+            
+            <div class="topic-card">
+                <div class="topic-number">٩</div>
+                <div class="topic-content">
+                    <h3>تنظيم حفل زفاف متكامل</h3>
+                    <p>من التخطيط إلى التنفيذ</p>
+                </div>
+            </div>
+            
+            <div class="topic-card">
+                <div class="topic-number">١٠</div>
+                <div class="topic-content">
+                    <h3>التوسع في المشروع</h3>
+                    <p>استراتيجيات النمو وتطوير الأعمال</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits" id="benefits">
+        <div class="section-header">
+            <h2>مميزات الورشة</h2>
+            <p>استثمر في نفسك واحصل على كل ما تحتاجه للنجاح</p>
+        </div>
+        
+        <div class="benefits-grid">
+            <div class="benefit-card">
+                <div class="benefit-icon">📜</div>
+                <h3>شهادة حضور</h3>
+                <p>الحصول على شهادة حضور الورشة معتمدة</p>
+            </div>
+            
+            <div class="benefit-card">
+                <div class="benefit-icon">👨‍🏫</div>
+                <h3>دعم فردي لمدة شهر</h3>
+                <p>دعم المشتركين والتواصل مع المدرب حتى تحقيق الأهداف</p>
+            </div>
+            
+            <div class="benefit-card">
+                <div class="benefit-icon">📋</div>
+                <h3>العقود القانونية</h3>
+                <p>تسليم جميع العقود القانونية باسمك وهويتك</p>
+            </div>
+            
+            <div class="benefit-card">
+                <div class="benefit-icon">📚</div>
+                <h3>كتاب متخصص</h3>
+                <p>كتاب "طريقك لتكون منظم زفاف مميز"</p>
+            </div>
+            
+            <div class="benefit-card">
+                <div class="benefit-icon">🌐</div>
+                <h3>عضوية دولية</h3>
+                <p>إمكانية الحصول على عضوية الرابطة الدولية الأمريكية</p>
+            </div>
+            
+            <div class="benefit-card">
+                <div class="benefit-icon">🤖</div>
+                <h3>تقنيات الذكاء الاصطناعي</h3>
+                <p>الاستفادة من أحدث التقنيات في تنظيم الحفلات</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Details Section -->
+    <section class="details" id="details">
+        <div class="section-header" style="margin-bottom: 30px;">
+            <h2 style="color: #C9A351;">تفاصيل الورشة</h2>
+            <p style="color: #F5EFE0; opacity: 0.8;">كل ما تحتاج معرفته للتسجيل</p>
+        </div>
+        
+        <div class="details-grid">
+            <div class="detail-card">
+                <div class="detail-icon">📅</div>
+                <h4>مدة الورشة</h4>
+                <p>ثلاثة أيام</p>
+                <p class="dates">
+                    السبت ١٠/١/٢٠٢٦<br>
+                    الأحد ١١/١/٢٠٢٦<br>
+                    الاثنين ١٢/١/٢٠٢٦
+                </p>
+            </div>
+            
+            <div class="detail-card">
+                <div class="detail-icon">⏰</div>
+                <h4>وقت الورشة</h4>
+                <p>ساعتين يومياً</p>
+                <p class="dates">من ٨م إلى ١٠م</p>
+            </div>
+            
+            <div class="detail-card">
+                <div class="detail-icon">💻</div>
+                <h4>مكان الورشة</h4>
+                <p>أونلاين</p>
+                <p class="dates">على منصة Zoom</p>
+            </div>
+            
+            <div class="detail-card">
+                <div class="detail-icon">💰</div>
+                <h4>قيمة الورشة</h4>
+                <p class="highlight-price">٢٠٠٠</p>
+                <p class="price-currency">ريال سعودي</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="register">
+        <div class="cta-content">
+            <h2>هذه الورشة قد تغير حياتك للأبد</h2>
+            <p>
+                إذا كنت تحلم بأن تكون منظم زفاف مميز ولديك الشغف في إسعاد العروسين وترغب أن تكون حراً مالياً
+            </p>
+            
+            <a href="https://wa.me/966593153979?text=مرحباً، أرغب بالتسجيل في ورشة منظم زفاف مميز" class="cta-btn-large" target="_blank">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+                سجل الآن عبر واتساب
+            </a>
+            
+            <div class="tamara-badge">
+                <svg width="80" height="30" viewBox="0 0 100 35" fill="none">
+                    <rect width="100" height="35" rx="8" fill="#FFD100"/>
+                    <text x="50" y="24" font-family="Arial" font-size="16" font-weight="bold" fill="#000" text-anchor="middle">tamara</text>
+                </svg>
+                <span>يوجد تقسيط على تمارا</span>
+            </div>
+            
+            <div class="qr-section">
+                <div class="contact-number">
+                    <span>للحجز والتواصل عبر واتساب</span>
+                    <a href="https://wa.me/966593153979?text=مرحباً، أرغب بالتسجيل في ورشة منظم زفاف مميز" target="_blank" dir="ltr">+966 59 315 3979</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>مبارك الشيخ</h3>
+                <p>مدرب دولي معتمد في تنظيم حفلات الزفاف، عضو الرابطة الدولية الأمريكية لمخططي حفلات الزفاف المحترفين</p>
+            </div>
+            
+            <div class="footer-contact">
+                <h4>تواصل معنا</h4>
+                <p>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="#25D366">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                    </svg>
+                    <a href="https://wa.me/966593153979?text=مرحباً، أرغب بالتسجيل في ورشة منظم زفاف مميز" target="_blank" style="color: #F5EFE0; text-decoration: none;" dir="ltr">+966 59 315 3979</a>
+                </p>
+                <p>
+                    <span>📍</span>
+                    أونلاين على Zoom
+                </p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>جميع الحقوق محفوظة © ٢٠٢٦ مبارك الشيخ - منظم زفاف مميز</p>
+        </div>
+    </footer>
+</body>
+</html>
